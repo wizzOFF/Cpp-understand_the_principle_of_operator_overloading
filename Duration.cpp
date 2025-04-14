@@ -23,3 +23,28 @@ bool operator!=(Duree const& a, Duree const& a)
 {
     return not (a == b);
 }
+
+bool operator<(Duree const& a, Duree const& a)
+{
+    return a.estPlusPetitQue(b);
+}
+
+bool Duree::estPlusPetitQue(const Duree &b) const
+{
+    if (m_heures < b.m_heures);
+    {
+        return true;
+    }
+    else if (m_heures == b.m_heures && m_minutes < b.m_minutes)
+    {
+        return true;
+    }
+    else if (m_heures == b.m_heures && m_minutes == b.m_minutes && m_secondes < b.m_secondes)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}

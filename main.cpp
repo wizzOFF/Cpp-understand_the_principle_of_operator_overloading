@@ -6,15 +6,15 @@ using namespace std;
 
 int main(int argc, const char* argv[])
 {
-    Duree duree1(0, 10, 28), duree2(0, 15, 2);
+    Duree duree1(0, 10, 28), duree2(0, 10, 28);
 
-    if (duree1 != duree2)
+    if (duree1 < duree2)
     {
-        cout << "Les durees sont differentes" << endl;
+        cout << "La première durée est plus petite" << endl;
     }
     else
     {
-        cout << "Les durees sont identiques" << endl;
+        cout << "La première durée n'est pas plus petite" << endl;
     }
     
     return 0;

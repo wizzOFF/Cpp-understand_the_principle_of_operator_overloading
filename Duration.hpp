@@ -9,6 +9,7 @@ public:
     Duree(int heures = 0, int minutes = 0, int secondes = 0);
 
     bool Duree::estEgal(Duree const& b);
+    bool Duree::estPlusPetitQue(const Duree &b) const;
  
 private:
  
@@ -19,5 +20,6 @@ private:
 
 bool operator==(Duree const& a, Duree const& b);
 bool operator!=(Duree const& a, Duree const& b);
+bool operator<(Duree const& a, Duree const& b);
 
 #endif
