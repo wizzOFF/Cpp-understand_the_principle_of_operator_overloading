@@ -7,6 +7,9 @@ class Duree
 public:
  
     Duree(int heures = 0, int minutes = 0, int secondes = 0);
+    
+    Duree& operator+(Duree const& a, Duree const& b);
+    void afficher() const;
 
     bool Duree::estEgal(Duree const& b);
     bool Duree::estPlusPetitQue(const Duree &b) const;
